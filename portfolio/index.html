@@ -1,22 +1,81 @@
-<!DOCTYPE html>
-<html lang="en">
+  <!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css"> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f2f3fb" />
+  <title>Trisha Banerjee</title>
+  <meta name="description" content="Trisha Banerjee's personal portfolio showcasing data engineering projects, work experience, and academic background." />
+  <meta name="keywords" content="Trisha Banerjee, Data Scientist, Data Engineer, Portfolio, University of Washington, Seattle, Data Science, Chemical Engineering" />
+  <link rel="canonical" href="https://trishabanerjee.github.io/" />
+  <meta name="author" content="Trisha Banerjee" />
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link href="assets/style/style.css" rel="stylesheet" />
+  <!-- Unpkg for card scroll reveal effect -->
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-    </header>
-    <section>
-        <h2>About Me</h2>
-        <p>Introduce yourself here.</p>
-    </section>
-    <section>
-        <h2>Projects</h2>
-        <p>Showcase your projects here.</p>
-    </section>
+  <div class="wrapper">
+    <div class="container">
+      <!---Picture and name---->
+      <div class="picture">
+        <img src="assets/profile-picture.webp" alt="Trisha Banerjee's photo" />
+      </div>
+      <!--On loading name effect-->
+      <div class="name" translate="no">
+        <span><span>Tri</span></span><span><span>sha</span></span> <span><span>Ban</span></span><span><span>er</span></span><span><span>jee</span></span>
+      </div>
+
+      <!----Few personal details---->
+      <!--more details button-->
+      <div class="info-box">
+        About me
+        <div class="toggle" onclick="vibrate()">
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <!--details-->
+        <div>
+          <br />
+          <div class="details">
+            <ul>
+              <li class="about">
+                Hello, I’m Trisha Banerjee. I am a Data Engineer and Research Assistant at the University of Washington. Originally from India, I now reside in Seattle, WA. When not working, I enjoy exploring coffee, taking long drives, and visiting cafeterias. My academic and professional journey reflects a strong foundation in data engineering complemented by practical experience in deploying scalable solutions in the cloud and building data pipelines.
+                <br /><br />
+                Feel free to connect with me on LinkedIn or email me directly.
+              </li>
+              <li>
+                <b>Contact:</b> <br>
+                4231, 12th Ave NE, Seattle, WA 98105 | +1(206)731-9651 | <a href="mailto:tbaner@uw.edu">tbaner@uw.edu</a>, <a href="mailto:trishabanerjee100@gmail.com">trishabanerjee100@gmail.com</a> | <a href="https://www.linkedin.com/in/trishabanerjee">LinkedIn</a>
+              </li>
+              <li>
+                <b>Education:</b>
+                <ul>
+                  <li>University of Washington, Seattle, Washington — MSc, Data Science (Sep 2023 - Mar 2025)</li>
+                  <li>BMS College of Engineering, India — BE, Chemical Engineering (Aug 2016 - Sep 2020)</li>
+                </ul>
+              </li>
+              <li>
+                <b>Skills:</b>
+                Python, R, C++, Scala, Java, and more. Detailed skills include applications in data analysis and engineering such as AWS, GCP, Azure, Streamlit, Power BI, Apache Spark, Hadoop, etc.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!----All social media buttons---->
+      <div class="social-media">
+        <a href="mailto:trishabanerjee100@gmail.com">
+          <div><i class="fa-solid fa-envelope"></i>Email</div>
+        </a>
+        <a href="https://www.linkedin.com/in/trishabanerjee">
+          <div><i class="fa-brands fa-linkedin-in"></i>LinkedIn</div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
+     
