@@ -1,21 +1,128 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset and base styles */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #E3E4FA;
+    color: #333;
+    line-height: 1.6;
 }
 
+/* Hide scrollbar for cleaner design */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Header styling */
 header {
-    background-color: #333;
-    color: white;
+    background-color: #2C3E50;
+    color: #FFF;
+    padding: 10px 0;
     text-align: center;
-    padding: 1em 0;
+    font-size: 22px;
+    letter-spacing: 2px;
 }
 
-section {
-    margin: 2em;
-    padding: 1em;
-    background-color: white;
+/* Main section styling */
+section.main {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile picture */
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    border: 5px solid #2C3E50;
+}
+
+/* Personal information styling */
+.personal-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Animation for name and title */
+.name, .title {
+    margin-top: 10px;
+    font-size: 24px;
+    color: #2C3E50;
+}
+
+.name {
+    font-weight: bold;
+}
+
+/* Section headings */
+section h2 {
+    color: #2C3E50;
+    border-bottom: 2px solid #16A085;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+/* Projects and details list */
+ul.details-list, ul.project-list {
+    list-style: none;
+    padding: 0;
+}
+
+.details-list li, .project-list li {
+    background: #ECF0F1;
+    margin-bottom: 10px;
+    padding: 10px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Links styling */
+a {
+    color: #2980B9;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Social media links */
+.social-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+/* Responsive design for larger screens */
+@media (min-width: 768px) {
+    body {
+        padding: 0 20px;
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main, .sidebar {
+        width: calc(50% - 10px);
+    }
+
+    .sidebar {
+        margin-left: 20px;
+    }
 }
